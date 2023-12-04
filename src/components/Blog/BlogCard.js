@@ -8,7 +8,7 @@ const BlogCard = ({ blog }) => {
       <h2 className="text-3xl mb-3 text-slate-950 font-medium">{title}</h2>
       <p className=" max-w-3xl text-center mb-4 text-xl">{content}</p>
       <Link
-        to={`/blogs/${title}`} // or [`/blogs/${id}`]
+        to={`/blogs/${id}/${title}`} // or [`/blogs/${id}`]
         className="mt-6 border-2 rounded-3xl py-3 max-w-fit mx-auto font-bold px-5 capitalize text-slate-950 border-slate-950"
       >
         Rad more

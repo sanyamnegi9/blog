@@ -8,7 +8,7 @@ const Blogs = () => {
       <h2 className="text-center text-4xl mb-8 font-semibold">Blogs</h2>
       <div className="flex flex-col gap-4">
         {blogsData.map((blog) => (
-          <BlogCard blog={blog} />
+          <BlogCard blog={blog} key={blog.id}/>
         ))}
       </div>
     </div>

@@ -29,7 +29,7 @@ const App = () => {
           />
         </Route>
 
-        <Route path="blogs/:blogTitle" element={<SharedBlogLayout />}>
+        <Route path="blogs/:blogId/:blogTitle" element={<SharedBlogLayout />}>
           <Route index element={<SingleBlog />} />
         </Route>
         <Route path="*" element={<Error />} />
